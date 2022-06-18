@@ -4,16 +4,61 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>To do task manager</h1>
-        <br>
-        <h2>Things to do</h2>
-        <form id="form">
-            <label for="item">Add a thing to do:</label>
-            <input type="text" id="item" name="item" required >
-            <button type="submit" id="submitBtn">Add</button>
-        </form>
-        <ol class="list">
-        </ol>
+
+        <header id="header">
+            <h1>IN DEVELOPMENT</h1>
+        </header>
+
+        <main id="main">
+
+            <div class="container">
+                <h1>To do task manager</h1>
+                <br>
+                <div class='statusBar'>
+                    <div class="box">
+                        <span class="number" id="estimatedHours">0</span>
+                        <p class="stats">Horas estimadas</p>
+                    </div>
+                    <div class="box">
+                        <span class="number" id="remainingTasks">0</span>
+                        <p class="stats">Tareas pendientes</p>
+                    </div>
+                    <div class="box">
+                        <span class="number" id="hoursRunning">0</span>
+                        <p class="stats">Horas transcurridas</p>
+                    </div>
+                    <div class="box">
+                        <span class="number" id="tasksDone">0</span>
+                        <p class="stats">Tareas completadas</p>
+                    </div>
+                </div>
+                <form id="form">
+                    <div class="task">
+                        <input type="text" id="title" name="title" placeholder='    Title' required >
+                        <input type="text" id="item" name="item" placeholder='   Description'required >
+                        <!--  <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1.2em" height="1.2em"><path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"/></svg>
+                        </span> --> 
+                        
+                        <input type="number" id="pomodoros" name="pomodoros" placeholder='   Pomodoros'required >
+                    </div>
+                    <button type="submit" id="submitBtn">Add</button>
+                </form>
+                
+                <ol class="list">
+                </ol>
+                <br><br><br>
+                <button type="button" id="deletebtn">Delete All</button>
+            </div>
+
+            <aside id="aside">
+                <h1>IN DEVELOPMENT</h1>
+            </aside>
+
+        </main>
+
+        
+
         <script src="index.js"></script>
     </body>
 </html>
