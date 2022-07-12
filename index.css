@@ -2,15 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    min-width: 700px;
 }
 
 h1 {
+    color: white;
     margin: 0;
 }
 
 #header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 500px;
     height: 10vh;
-    background-color: rgb(59, 162, 253);
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    height: 70%;
 }
 
 #main {
@@ -18,52 +33,97 @@ h1 {
 }
 
 .container {
-    padding:1em;
-    width: 80vw;
-    background-color: aquamarine;
+    padding: 1em;
+    width: 73vw;
+    background-color: rgb(0, 0, 0);
     order: 1;
 }
 
 #aside {
-    width: 20vw;
+    width: 25vw;
     min-height: 90vh;
-    background-color: rgb(17, 202, 202);
+    background-color: rgb(33, 35, 35);
+    border-radius: .5em;
 }
 
 .statusBar {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
-    background-color: chocolate;
-    border-radius: .5em; 
+    background-color: rgb(135, 135, 135);
+    border-radius: .5em;
+    text-align: center;
 }
 
 .task {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
+    background-color: rgb(135, 135, 135);
     margin: .5em 0;
-    padding:1em;
-    border-radius: .5em; 
+    padding: .7em 1em;
+    border-radius: .5em;
 }
 
 input {
-    width: 20%;
+    background-color: rgb(255, 255, 255);
+    min-width: 20%;
+    max-width: 90%;
     border: none;
-    border-radius: 1em;
+    border-radius: .5em;
+    text-align: center;
+    margin: 1em;
+    font-size: .9rem;
 }
 
 .number {
     font-size: 2em;
 }
 
-.stats {
-    color: rgb(23, 10, 135);
-}
-
 .box {
-    padding:.6em;
-    display:flex;
+    padding: .6em;
+    display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer {
+    margin: 1em;
+    display: flex;
+    justify-content: right;
+}
+
+.buttonArea {
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+}
+
+.tabs {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.tab {
+    padding: 0 2em;
+    padding-top: .5em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.selected {
+    background-color: rgb(33, 35, 35);
+}
+
+.list {
+    border-radius: .5em;
+    background-color: rgb(33, 35, 35);
+    padding: 1em;
+}
+
+button {
+
+    border-radius: .5em;
+    padding: .5em .7em;
 }
